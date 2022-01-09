@@ -8,16 +8,16 @@ manifest:
       url-base: https://github.com/petejohanson
     - name: fossephate
       url-base: https://github.com/fossephate
-  # projects:
-  #   - name: zmk
-  #     remote: fossephate
-  #     revision: main
-  #     import: app/west.yml
   projects:
     - name: zmk
-      remote: petejohanson
-      revision: display/bongo-cat-widget
+      remote: fossephate
+      revision: main
       import: app/west.yml
+  # projects:
+  #   - name: zmk
+  #     remote: petejohanson
+  #     revision: display/bongo-cat-widget
+  #     import: app/west.yml
   # projects:
   #   - name: zmk
   #     remote: cdc-mkb
