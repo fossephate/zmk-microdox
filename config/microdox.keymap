@@ -62,5 +62,21 @@
                         >;
                 };
 
+
+                macro_layer {
+                // -----------------------------------------------------------------------------------------
+                // | AF4 |     |     |RGBHD|RGBHI|   | F7  | F8  | F9  | F12 |RGBTG|
+                // |     |     |     |RGBBD|RGBBI|   | F4  | F5  | F6  | F11 |BTCLR|
+                // |     | CUT | CPY |PSTE |PSTE |   | F1  | F2  | F3  | F10 |OUTTG|
+                //                   |     | DEL |     |   |     |     |     |
+                bindings = <
+                &kp LA(F4) &trans &trans &rgb_ug RGB_HUD &rgb_ug RGB_HUI                 &kp F7 &kp F8 &kp F9 &kp F12 &rgb_ug RGB_TOG
+                &trans &trans &trans &rgb_ug RGB_BRD &rgb_ug RGB_BRI                     &kp F4 &kp F5 &kp F6 &kp F11 &bt BT_CLR
+                &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &rgb_ug RGB_EFF                  &kp F1 &kp F2 &kp F3 &kp F10 &out OUT_TOG
+                        &trans &trans &kp DEL                                    &trans &trans &trans
+                        >;
+                };
+
+
         };
 };
